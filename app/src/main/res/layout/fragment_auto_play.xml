@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/autoGameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="@string/you_go_first"
+        android:textColor="#000000"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/autoGameBoard"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/grid__2_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/autolayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@id/autoGameBoard">
+
+        <ImageButton
+            android:id="@+id/autoBox1"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:padding="24sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/autoBox2"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:padding="20sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/autoBox3"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:padding="20sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/autolayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/autolayout1">
+
+        <ImageButton
+            android:id="@+id/autoBox4"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:padding="20sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/autoBox5"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:padding="20sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/autoBox6"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:padding="20sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/autolayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/autolayout2">
+
+        <ImageButton
+            android:id="@+id/autoBox7"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:padding="20sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/autoBox8"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:padding="20sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/autoBox9"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:padding="20sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/auto_play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/play_again"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:backgroundTint="#9C9898"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/autoGameBoard"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

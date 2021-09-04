@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="play">Play With Friend</string>
+    <string name="auto_play">Play  With Android</string>
+    <string name="title_fragment_label">Tic-Tac-Toe</string>
+    <string name="message">Play…!!!</string>
+    <string name="play_again">Play Again</string>
+    <string name="player_winner_text">Congratulations…!!! You Won… :( </string>
+    <string name="android_won_text">Yeahhh…!!! I Won… xD</string>
+    <string name="game_lose">Game Lost</string>
+    <string name="player_Os_turn">Player O\'s Turn…!!!</string>
+    <string name="player_Xs_turn">Player X\'s Turn…!!!</string>
+    <string name="player_X_won">Player X won…!!!</string>
+    <string name="player_O_won">Player O won…!!!</string>
+    <string name="game_won">Game Won</string>
+    <string name="match_draw">Match Draw…!!!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_turn_text">Player X\'s Turn…!!!</string>
+    <string name="you_go_first">You Go First…!!!</string>
+</resources>

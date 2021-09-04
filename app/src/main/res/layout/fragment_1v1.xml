@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/gameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="@string/default_turn_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/gameBoard"
+        android:layout_width="0dp"
+        android:layout_height="408dp"
+        android:src="@drawable/grid__2_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@id/gameBoard"
+        android:layout_marginTop="25dp">
+        <ImageButton
+            android:id="@+id/box1"
+            android:layout_weight="1"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:padding="24sp"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/box2"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:padding="20sp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/box3"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:padding="20sp"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layout1"
+        android:layout_marginTop="25dp">
+        <ImageButton
+            android:id="@+id/box4"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:padding="20sp"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/box5"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:padding="20sp"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/box6"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:padding="20sp"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layout2"
+        android:layout_marginTop="25dp">
+
+        <ImageButton
+            android:id="@+id/box7"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:padding="20sp"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/box8"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:padding="20sp"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+
+        <ImageButton
+            android:id="@+id/box9"
+            android:layout_width="111dp"
+            android:layout_height="101dp"
+            android:layout_weight="1"
+            android:padding="20sp"
+            android:background="?android:attr/activatedBackgroundIndicator"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/tic" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_again"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:backgroundTint="#9C9898"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@id/gameBoard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
