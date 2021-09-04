@@ -31,39 +31,48 @@ class AutoPlayFragment : Fragment() {
 
         binding.autoBox1.setOnClickListener {
             playerGamePlay(binding.autoBox1, 0)
-            androidsMove()
+            if(count<8)
+                androidsMove()
         }
         binding.autoBox2.setOnClickListener {
             playerGamePlay(binding.autoBox2, 1)
-            androidsMove()
+            if(count<8)
+                androidsMove()
         }
         binding.autoBox3.setOnClickListener {
             playerGamePlay(binding.autoBox3, 2)
-            androidsMove()
+            if(count<8)
+                androidsMove()
         }
         binding.autoBox4.setOnClickListener {
             playerGamePlay(binding.autoBox4, 3)
-            androidsMove()
+            if(count<8)
+                androidsMove()
         }
         binding.autoBox5.setOnClickListener {
             playerGamePlay(binding.autoBox5, 4)
-            androidsMove()
+            if(count<8)
+                androidsMove()
         }
         binding.autoBox6.setOnClickListener {
             playerGamePlay(binding.autoBox6, 5)
-            androidsMove()
+            if(count<8)
+                androidsMove()
         }
         binding.autoBox7.setOnClickListener {
             playerGamePlay(binding.autoBox7, 6)
-            androidsMove()
+            if(count<8)
+                androidsMove()
         }
         binding.autoBox8.setOnClickListener {
             playerGamePlay(binding.autoBox8, 7)
-            androidsMove()
+            if(count<8)
+                androidsMove()
         }
         binding.autoBox9.setOnClickListener {
             playerGamePlay(binding.autoBox9, 8)
-            androidsMove()
+            if(count<8)
+                androidsMove()
         }
 
         binding.autoPlayAgain.setOnClickListener {
@@ -144,7 +153,7 @@ class AutoPlayFragment : Fragment() {
                 gameEnd()
                 autoGameText.visibility = View.VISIBLE
                 autoGameText.setText(R.string.match_draw)
-                autoGameText.visibility = View.VISIBLE
+                autoPlayAgain.visibility = View.VISIBLE
             }
             count++
         }
